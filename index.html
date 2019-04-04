@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
@@ -34,7 +35,7 @@
         <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
-          <li><a href="#">Каталог</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Спецпредложения</a></li>
           <li><a href="#">Доставка</a></li>
@@ -44,7 +45,7 @@
     </header>
 
     <main class="container">
-      
+
       <h1 class="visually-hidden">Техномарт</h1>
 
       <section class="promo">
@@ -74,18 +75,24 @@
         <div class="promo-slider">
           <ul class="promo-slider-list">
             <li class="promo-slider-item">
-              <h3>Дрели</h3>
-              <p class="promo-text">Соседям на радость!</p>
-              <a class="button" href="catalog.html">Открыть каталог</a>
-            </li>
-            <li class="promo-slider-item">
               <h3>Перфораторы</h3>
               <p class="promo-text">Настоящие мужские игрушки</p>
+              <img src="img/slider-1.jpg" width="620" height="266" alt="Рабочий сверлит стену перфоратором">
+              <a class="button" href="catalog.html">Открыть каталог</a>
+            </li>
+            <li class="promo-slider-item promo-slider-item-active">
+              <h3>Дрели</h3>
+              <p class="promo-text">Соседям на радость!</p>
+              <img src="img/slider-2.jpg" width="620" height="266" alt="Рабочий сверлит стену дрелью">
               <a class="button" href="catalog.html">Открыть каталог</a>
             </li>
           </ul>
-          <button class="promo-slider-prev">Назад</button>
-          <button class="promo-slider-next">Вперед</button>
+          <button class="promo-slider-prev" type="button">Назад</button>
+          <button class="promo-slider-next" type="button">Вперед</button>
+          <ul class="promo-slider-dots">
+            <li><button type="button">1</button>
+            <li class="promo-slider-dots-active"><button type="button">2</button>
+          </ul>
         </div>
       </section>
 
@@ -95,7 +102,7 @@
         <ul class="popular-products-list">
           <li class="popular-products-item">
             <p class="product-image">
-              <img src="" width="" height="" alt="Перфоратор BOSCH BFG 9000">
+              <img src="img/product-1.jpg" width="184" height="81" alt="Перфоратор BOSCH BFG 9000">
             </p>
             <h3>Перфоратор BOSCH BFG 9000</h3>
             <p class="product-price">
@@ -109,7 +116,7 @@
           </li>
           <li class="popular-products-item">
             <p class="product-image">
-              <img src="" width="" height="" alt="Перфоратор BOSCH BFG 3000">
+              <img src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             </p>
             <h3>Перфоратор BOSCH BFG 3000</h3>
             <p class="product-price">
@@ -123,7 +130,7 @@
           </li>
           <li class="popular-products-item">
             <p class="product-image">
-              <img src="" width="" height="" alt="Перфоратор BOSCH BFG 6000">
+              <img src="img/product-3.jpg" width="144" height="83" alt="Перфоратор BOSCH BFG 6000">
             </p>
             <h3>Перфоратор BOSCH BFG 6000</h3>
             <p class="product-price">
@@ -137,7 +144,7 @@
           </li>
           <li class="popular-products-item label-new">
             <p class="product-image">
-              <img src="" width="" height="" alt="Перфоратор BOSCH BFG 2000">
+              <img src="img/product-4.jpg" width="127" height="89" alt="Перфоратор BOSCH BFG 2000">
             </p>
             <h3>Перфоратор BOSCH BFG 2000</h3>
             <p class="product-price">
@@ -157,42 +164,42 @@
         <ul class="popular-brands-list">
           <li class="popular-brands-item">
             <a href="#">
-              <img src="" width="" height="" alt="Логотип BOSCH">
+              <img src="img/bosch.png" width="126" height="37" alt="Логотип BOSCH">
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img src="" width="" height="" alt="Логотип Makita">
+              <img src="img/makita.png" width="123" height="40" alt="Логотип Makita">
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img src="" width="" height="" alt="Логотип DeWALT">
+              <img src="img/dewalt.png" width="146" height="44" alt="Логотип DeWALT">
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img src="" width="" height="" alt="Логотип ИНТЕРСКОЛ">
+              <img src="img/interskol.png" width="184" height="32" alt="Логотип ИНТЕРСКОЛ">
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img src="" width="" height="" alt="Логотип HITACHI">
+              <img src="img/hitachi.png" width="169" height="31" alt="Логотип HITACHI">
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img src="" width="" height="" alt="Логотип LG">
+              <img src="img/lg.png" width="121" height="73" alt="Логотип LG">
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img src="" width="" height="" alt="Логотип AEG">
+              <img src="img/aeg.png" width="151" height="96" alt="Логотип AEG">
             </a>
           </li>
           <li class="popular-brands-item">
             <a href="#">
-              <img src="" width="" height="" alt="Логотип metabo">
+              <img src="img/metabo.png" width="204" height="69" alt="Логотип metabo">
             </a>
           </li>
         </ul>
@@ -260,7 +267,7 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <a class="map-link" href="#">
-          <img src="" width="" height="" alt="Офис компании по адресу ул. Б. Конюшенная, д. 19/8, г. Санкт-Петербург">
+          <img src="img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Б. Конюшенная, д. 19/8, г. Санкт-Петербург">
         </a>
         <a class="button write-us-link" href="#">Заблудились? Напишите нам!</a>
       </section>
@@ -276,7 +283,7 @@
       <ul class="footer-site-links">
         <li><a href="#">Компания</a></li>
         <li><a href="#">Новости</a></li>
-        <li><a href="#">Каталог</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
@@ -308,7 +315,7 @@
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <p>
-        <img src="" width="" height="" alt="Офис компании по адресу ул. Б. Конюшенная, д. 19/8, г. Санкт-Петербург">
+        <img src="img/map-popup.jpg" width="940" height="446" alt="Офис компании по адресу ул. Б. Конюшенная, д. 19/8, г. Санкт-Петербург">
       </p>
       <button class="modal-close">Закрыть</button>
     </section>
