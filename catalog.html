@@ -8,9 +8,12 @@
 
     <header class="main-header">
       <a class="main-header-logo" href="index.html">Техномарт</a>
-      <p class="search-box">
-        <!-- Строка поиска -->
-      </p>
+      <div class="search-box">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search-form-q">Поиск</label>
+          <input class="search-input" id="search-form-q" type="search" name="q" placeholder="Поиск:">
+        </form>
+      </div>
       <a class="bookmark-link" href="#">Закладки: <span class="bookmark-count">0</span></a>
       <a class="cart-link cart-full" href="#">Корзина: <span class="cart-count">10</span></a>
       <a class="order-link" href="#">Оформить заказ</a>
@@ -55,7 +58,61 @@
 
       <section class="filters">
         <h2>Фильтр:</h2>
-        <!-- Форма фильтрации -->
+        <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Цена:</legend>
+            <div class="filter-range-slider">
+              <span class="filter-range-slider-handle-min"></span>
+              <span class="filter-range-slider-handle-max"></span>
+              <div class="filter-range-slider-bar">
+                <div class="filter-range-slider-fill"></div>
+              </div>
+            </div>
+            <label class="visually-hidden" for="filters-form-price-min">От</label>
+            <input class="filter-input filter-input-range" id="filters-form-price-min" name="price-min" type="text" value="0">
+            <label class="visually-hidden" for="filters-form-price-max">До</label>
+            <input class="filter-input filter-input-range" id="filters-form-price-max" name="price-max" type="text" value="30000">
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" id="filters-form-brand-bosch" name="brand" type="checkbox" value="bosch" checked>
+                <label for="filters-form-brand-bosch">Bosch</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" id="filters-form-brand-interskol" name="brand" type="checkbox" value="interskol">
+                <label for="filters-form-brand-interskol">Интерскол</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" id="filters-form-brand-makita" name="brand" type="checkbox" value="makita" checked>
+                <label for="filters-form-brand-makita">Makita</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" id="filters-form-brand-dewalt" name="brand" type="checkbox" value="dewalt">
+                <label for="filters-form-brand-dewalt">Dewalt</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" id="filters-form-brand-hitachi" name="brand" type="checkbox" value="hitachi">
+                <label for="filters-form-brand-hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="filter-input filter-input-radio" id="filters-form-power-supply-battery" name="power-supply" type="radio" value="battery" checked>
+                <label for="filters-form-power-supply-battery">Аккумуляторные</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-radio" id="filters-form-power-supply-circuit" name="power-supply" type="radio" value="circuit">
+                <label for="filters-form-power-supply-circuit">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="filter-button button" type="submit">Показать</button>
+        </form>
       </section>
       <section class="sort">
         <h2>Сортировка:</h2>

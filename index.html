@@ -9,9 +9,12 @@
 
     <header class="main-header">
       <a class="main-header-logo">Техномарт</a>
-      <p class="search-box">
-        <!-- Строка поиска -->
-      </p>
+      <div class="search-box">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search-form-q">Поиск</label>
+          <input class="search-input" id="search-form-q" type="search" name="q" placeholder="Поиск:">
+        </form>
+      </div>
       <a class="bookmark-link" href="#">Закладки: <span class="bookmark-count">0</span></a>
       <a class="cart-link" href="#">Корзина: <span class="cart-count">0</span></a>
       <a class="order-link" href="#">Оформить заказ</a>
@@ -317,13 +320,29 @@
       <p>
         <img src="img/map-popup.jpg" width="940" height="446" alt="Офис компании по адресу ул. Б. Конюшенная, д. 19/8, г. Санкт-Петербург">
       </p>
-      <button class="modal-close">Закрыть</button>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
 
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <!-- Форма связи -->
-      <button class="modal-close">Закрыть</button>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="write-us-form-name">Ваше имя:</label>
+          <input id="write-us-form-name" name="name" type="text" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p>
+          <label for="write-us-form-email">Ваш e-mail:</label>
+          <input id="write-us-form-email" name="email" type="email" placeholder="Для отправки ответа">
+        </p>
+        <p>
+          <label for="write-us-form-message">Текст письма:</label>
+          <textarea id="write-us-form-message" name="message" placeholder="В свободной форме"></textarea>
+        </p>
+        <p>
+          <button type="submit">Отправить</button>
+        </p>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
 
   </body>
