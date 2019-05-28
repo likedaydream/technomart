@@ -299,7 +299,7 @@
         <a class="map-link" href="#">
           <img src="img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Б. Конюшенная, д. 19/8, г. Санкт-Петербург">
         </a>
-        <a class="button write-us-link" href="#">Заблудились? Напишите нам!</a>
+        <a class="button button-full write-us-link" href="#">Заблудились? Напишите нам!</a>
       </section>
     </div>
   </div>
@@ -366,27 +366,34 @@
 </section>
 
 <section class="modal modal-write-us">
-  <div class="modal-content">
-    <h2 class="visually-hidden">Напишите нам</h2>
-    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="write-us-form-name">Ваше имя:</label>
-        <input class="form-input" id="write-us-form-name" name="name" type="text" placeholder="Представьтесь, пожалуйста">
-      </p>
-      <p>
-        <label for="write-us-form-email">Ваш e-mail:</label>
-        <input class="form-input" id="write-us-form-email" name="email" type="email" placeholder="Для отправки ответа">
-      </p>
-      <p>
+  <h2 class="visually-hidden">Напишите нам</h2>
+  <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+    <div class="modal-content">
+      <div class="modal-columns">
+        <div class="modal-col-1">
+          <p class="form-item">
+            <label for="write-us-form-name">Ваше имя:</label>
+            <input class="form-input" id="write-us-form-name" name="name" type="text" placeholder="Представьтесь, пожалуйста">
+          </p>
+        </div>
+        <div class="modal-col-2">
+          <p class="form-item">
+            <label for="write-us-form-email">Ваш e-mail:</label>
+            <input class="form-input" id="write-us-form-email" name="email" type="email" placeholder="Для отправки ответа">
+          </p>
+        </div>
+      </div>
+
+      <p class="form-item">
         <label for="write-us-form-message">Текст письма:</label>
         <textarea class="form-input form-textarea" id="write-us-form-message" name="message" placeholder="В свободной форме"></textarea>
       </p>
-      <div class="modal-footer">
-        <button class="button button-wide" type="submit">Отправить</button>
-      </div>
-    </form>
-    <button class="modal-close" type="button">Закрыть</button>
-  </div>
+    </div>
+    <div class="modal-footer">
+      <button class="button button-wide button-full" type="submit">Отправить</button>
+    </div>
+  </form>
+  <button class="modal-close" type="button">Закрыть</button>
 </section>
 
 </body>
