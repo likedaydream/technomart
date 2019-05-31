@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="style.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -359,9 +359,10 @@
 
 <section class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
-  <p>
+  <p class="visually-hidden">
     <img src="img/map-popup.jpg" width="940" height="446" alt="Офис компании по адресу ул. Б. Конюшенная, д. 19/8, г. Санкт-Петербург">
   </p>
+  <iframe src="https://yandex.uz/map-widget/v1/-/CCvSZNoI" width="940" height="446" frameborder="0" allowfullscreen="true"></iframe>
   <button class="modal-close" type="button">Закрыть</button>
 </section>
 
@@ -395,6 +396,27 @@
   </form>
   <button class="modal-close" type="button">Закрыть</button>
 </section>
+
+<section class="modal modal-cart-add">
+  <div class="modal-content">
+    <h2 class="title">Товар добавлен в корзину!</h2>
+  </div>
+  <div class="modal-footer">
+    <div class="modal-columns">
+      <div class="modal-col-1">
+        <a class="button button-full">Оформить заказ</a>
+      </div>
+      <div class="modal-col-2">
+        <button class="button button-full button-light" type="button">Продолжить покупки</button>
+      </div>
+    </div>
+  </div>
+  <button class="modal-close" type="button">Закрыть</button>
+</section>
+
+<script src="js/index.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/map.js"></script>
 
 </body>
 </html>
